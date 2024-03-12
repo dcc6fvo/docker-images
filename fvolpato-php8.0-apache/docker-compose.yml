@@ -1,0 +1,12 @@
+ version: '3.0'
+ services:
+  teste:
+   image: fvolpato/php8.0-apache:1.2
+   ports:
+    - "8010:80"
+   volumes:
+    - /mnt/servicos/visitante/logs:/var/log/apache2
+    - /mnt/servicos/visitante/www/captive-portal/public_html:/var/www/html/
+    - /mnt/servicos/visitante/000-default.conf:/etc/apache2/sites-available/000-default.conf
+   deploy:
+     replicas: 1

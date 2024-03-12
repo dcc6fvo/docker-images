@@ -1,0 +1,4 @@
+# run the test script every minute and output whatever it echoes in a log file
+# using `>` instead of `>>` to append a new line at each cron iteration
+5 * * * * /usr/local/bin/php /var/www/html/persistMac.php >> /cron_scripts/mac_sync.log 2>&1
+
