@@ -1,2 +1,2 @@
-# php-docker-images
-Images that we have been working on
+# docker-images
+Docker images for Laravel, PHP, GLPI, OJS and others...
