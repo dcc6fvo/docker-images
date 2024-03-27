@@ -1,0 +1,19 @@
+FROM docker.io/alpine:3.19.0
+
+RUN apk add --no-cache \
+	ca-certificates \
+	openssh \
+	git \
+	ansible \
+	make \
+	just \
+	py3-dnspython \
+	py3-passlib
+
+WORKDIR /ansible 
+
+COPY entrypoint.sh /entrypoint.sh
+
+RUN ["chmod", "+x", "/entrypoint.sh"]
+
+ENTRYPOINT ["/entrypoint.sh"]
