@@ -1,7 +1,7 @@
 [docker]
-docker01.luzerna.ifc.edu.br
-docker02.luzerna.ifc.edu.br
-docker03.luzerna.ifc.edu.br
+docker01.example.com
+docker02.example.com
+docker03.example.com
 
 [all:vars]
 ansible_user=suporte
