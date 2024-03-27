@@ -19,8 +19,7 @@ Installation && Running
 
 5) Change username for a specific user and its SSH keys and RUN (for instance):
 
-		docker run -d -it --rm -v `pwd`:/ansible -v 
- /home/username/.ssh/id_rsa:/ansible/.ssh/id_rsa:ro docker-ansible-example username
+		docker run -d -it --rm -v `pwd`:/ansible -v /home/username/.ssh/id_rsa:/ansible/.ssh/id_rsa:ro docker-ansible-example username
 
 6) Upon container boot, perform the following:
 
