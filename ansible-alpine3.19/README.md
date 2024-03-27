@@ -2,6 +2,8 @@
 
 This Docker image utilizes Alpine 3.19 alongside the Ansible software for automating server configurations. It offers the capability to specifythe username and its corresponding SSH key through the Docker run command.
 
+This example includes an Ansible configuration that accesses servers listed in the "hosts" file, performing apt-get update on each one.
+
 Installation && Running
 -----------------------
 
