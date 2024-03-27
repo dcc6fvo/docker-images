@@ -15,11 +15,16 @@ Installation && Running
 
 4) Build it:
 
-			docker build -t docker-ansible-example --no-cache .
+		docker build -t docker-ansible-example --no-cache .
 
 5) Change username for a specific user and its SSH keys and RUN (for instance):
 
-			docker run -d -it --rm -v `pwd`:/ansible -v /home/username/.ssh/id_rsa:/ansible/.ssh/id_rsa:ro docker-ansible-example username
+		docker run -d -it --rm -v `pwd`:/ansible -v 
+ /home/username/.ssh/id_rsa:/ansible/.ssh/id_rsa:ro docker-ansible-example username
+
+6) Upon container boot, perform the following:
+
+   		ansible-playbook provisioning.yml -i hosts
 
 
 
