@@ -9,11 +9,13 @@ Installation && Running
 
 2) Access the git clone folder.
 
-3) Build it:
+3) Change Hosts in hosts file.
+
+4) Build it:
 
 			docker build -t docker-ansible-example --no-cache .
 
-4) Change username for a specific user and its SSH keys and RUN (for instance):
+5) Change username for a specific user and its SSH keys and RUN (for instance):
 
 			docker run -d -it --rm -v `pwd`:/ansible -v /home/username/.ssh/id_rsa:/ansible/.ssh/id_rsa:ro docker-ansible-example username
 
